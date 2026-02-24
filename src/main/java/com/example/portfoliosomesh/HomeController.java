@@ -13,7 +13,7 @@ public class HomeController {
 
     @GetMapping("version")
     public String version() {
-        return "Version: v1";
+        return "Version: v2";
     }
 
     @GetMapping("/health")
