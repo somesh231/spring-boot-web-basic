@@ -1,6 +1,6 @@
 package com.example.portfoliosomesh;
 
-import com.example.portfoliosomesh.Entity.User;
+import com.example.portfoliosomesh.Entity.User1;
 import com.example.portfoliosomesh.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,12 +22,12 @@ public class HomeController {
     }
 
     @PostMapping("/users")
-    public User createUser(@RequestBody User user) {
-        return userRepository.save(user);
+    public User1 createUser(@RequestBody User1 user1) {
+        return userRepository.save(user1);
     }
 
     @GetMapping("/users")
-    public List<User> getUsers(){
+    public List<User1> getUsers(){
         return userRepository.findAll();
     }
 
